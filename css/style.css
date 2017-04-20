@@ -1,0 +1,176 @@
+*, p {
+  font-size: 14px;
+  font-family: Arial, arial, sans-serif;
+}
+
+.errorlist p {margin: 5px 0;}
+
+label {font-size: 11px;}
+
+p.fieldwrap {
+  margin: 10px 0;
+}
+
+div.form-wrapper {
+width: 480px;
+margin: 20px auto;
+}
+
+.disp {display:none;}
+
+input[type=text], textarea {
+  width: 468px;
+  min-height: 50px;
+  border: 0;
+  background: #f0f0f0;
+  outline: 1px solid #c8c8c8;
+  padding-left: 12px;
+}
+
+input[type=text]:focus, textarea:focus {
+  border: 0;
+}
+
+textarea {
+  width: 456px;
+  height: 300px;
+  padding: 12px; 
+}
+
+select {
+  -moz-appearance:normal;
+  -webkit-appearance:button;
+  width: 480px;
+  height: 50px;
+  border: 0;
+  outline: 1px solid #c8c8c8;
+  background: #f0f0f0;
+  cursor: pointer;
+  cursor: hand;
+  color: #999999;
+  border-radius: 0;
+  padding-left: 12px;
+}
+
+input[type=submit] {
+  -moz-appearance:button;
+  -webkit-appearance:button;
+  width: 480px;
+  height: 50px;
+  border: 0;
+  outline: 1px solid #2e76ff;
+  background: #3f81ff;
+  cursor: pointer;
+  cursor: hand;
+  color: #fff;
+  border-radius: 0;
+}
+
+input[type=submit]:hover {
+  background: #2e76ff;
+  outline:1px solid #1d6bff;
+}
+
+div.notification {
+  width: 468px;
+  height: 50px;
+  padding-left: 12px;
+  color: white;
+  margin: 0 0 10px 0;
+}
+
+div.notification p {line-height: 50px;}
+
+div.notification.success {
+  background: url('http://www.donedigital.com.au/contact-legendary-suitjamas/iconography-sprite.png') #27a30c;
+  background-position: 0 3px;
+  outline: 1px solid #23930b;
+}
+
+div.notification.error {
+  background: url('http://www.donedigital.com.au/contact-legendary-suitjamas/iconography-sprite.png') #e2432d;
+  outline: 1px solid #df361f;
+  background-position: 0 203px;
+}
+
+input#fm_name, input#fm_email, select#fm_subject {
+  background-image: url('http://www.donedigital.com.au/contact-legendary-suitjamas/iconography-sprite.png');
+}
+
+input#fm_name {background-position: 0 153px;}
+input#fm_email {background-position: 0 353px;}
+select#fm_subject {background-position: 0 301px;}
+
+::-webkit-input-placeholder {
+    color:    #999;
+}
+:-moz-placeholder {
+    color:    #999;
+}
+::-moz-placeholder {
+    color:    #999;
+}
+:-ms-input-placeholder {
+    color:    #999;
+}
+
+@-moz-document url-prefix() {
+  select {
+    padding: 16px 0 0 0;
+    text-indent: 15px;
+    outline: 0;
+    margin-left: -20px;
+    width: 500px;
+    background-position: 21px 301px !important;
+  }
+  
+  .ff-only {
+    outline: 1px solid #c8c8c8;
+    overflow: hidden;
+    width: 480px;
+  }
+
+  p {margin:0;}
+}
+
+@media only screen and (min-device-width:320px) and (max-device-width:480px) {
+  input[type="text"] {
+    width: 270px;
+  }
+  select, input[type="submit"] {
+    width: 289px !important;
+  }
+
+  textarea {width: 265px;}
+
+  div.errorlist p {font-size: 10px;}
+
+  div.notification {width: 277px;}
+  div.errorlist {width:265px !important;}
+
+  input#fm_name {background-position: -190px 153px;}
+  input#fm_email {background-position: -190px 353px;}
+  select#fm_subject {background-position: -190px 301px;
+}
+}
+
+div.errorlist {
+  width: 456px;
+  min-height: 50px;
+  border: 0;
+  background: #F0F0F0;
+  outline: 1px solid #C8C8C8;
+  padding: 12px;
+  margin-top: -8px;
+  color: #999;
+}
+  
+div.faq {
+  background: #fff48a;
+  outline: 1px solid #fff279;
+  color: #222;
+  padding: 12px 0 12px 12px;
+  height: auto;
+}
+
+div.faq p {line-height: 25px;}

@@ -1,0 +1,77 @@
+<html>
+<head>
+<h1 align="center"> Student </h1>
+<style>
+body {
+background: #f06;
+background: linear-gradient(45deg, #f06, yellow);
+min-height: 100%;
+}
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: 3; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+</style>
+</head>
+</html>
+<?php
+$sql="select * from students";
+$res=$conn->query($sql);
+if($res->num_rows>0)
+{
+  echo "<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>";
+while($row=$res->fetch_assoc())
+{
+    $data1=$row[];
+	$data2=$row[];
+	$data3=$row[];
+	$data4=$row[];
+	$sql2="select * from people where '$data'=ssn";
+	$res2=$conn->query($sql2);
+	while($row2=$res2->fetch_assoc())
+	{
+		$data5=$row2[];
+		$data6=$row2[];
+		$data7=$row2[];
+		$data8=$row2[];
+		$sql3="select * from st_sub where '$data6'=sub_id";
+		$res3=$conn->query($sql3);
+		while($row4=$res3->fetch_assoc())
+		{
+			$data9=$row4[];
+			$data10=$row4[];
+			$sql4="select * from subject where '$data9'=sub_id";
+			$res4=$conn->query($sql4);
+			while($row5=$res4->fetch_assoc())
+			{
+				$data11=$row5[];
+				$data12=$row5[];
+			}
+		}
+	}
+}
+echo "</table>";
+}
+else
+{
+	echo "<p align='center' style='font-size:20px;'>";
+}
+?>
