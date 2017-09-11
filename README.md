@@ -18,11 +18,11 @@ chmod +x xampp-linux-x64-5.6.20-0-installer.run
 ```
 MySql
 
-...
+```
 sudo apt-get install mysql-server
 sudo mysql_secure_installation
 mysql -u root -p
-...
+```
 
 
 ### Deployment
